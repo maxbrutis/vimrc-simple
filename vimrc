@@ -158,7 +158,7 @@ nnoremap <C-L> :nohl<CR><C-L>
 
 let mapleader = "-"
 
-nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>ev :edit $MYVIMRC<cr>
 
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
