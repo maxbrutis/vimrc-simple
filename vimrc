@@ -26,8 +26,8 @@ syntax on
 
 set cursorline
 
-highlight CursorLine cterm=NONE ctermbg=234 guibg=NONE
-highlight SignColumn ctermfg=grey ctermbg=grey
+highlight CursorLine   cterm=NONE ctermbg=234 guibg=NONE
+highlight CursorLineNr cterm=NONE ctermbg=234
 
 " Attempt to determine the type of a file based on its name and possibly its
 " contents. Use this to allow intelligent auto-indenting for each filetype,
