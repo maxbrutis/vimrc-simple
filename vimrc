@@ -157,3 +157,8 @@ map Y y$
 nnoremap <C-L> :nohl<CR><C-L>
  
 "------------------------------------------------------------
+
+let mapleader = "-"
+
+nnoremap <leader>ev :edit $MYVIMRC<cr>
+nnoremap <leader>ev :source $MYVIMRC<cr>
