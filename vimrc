@@ -14,16 +14,50 @@
 " Set 'nocompatible' to ward off unexpected things that your distro might
 " have made, as well as sanely reset options when re-sourcing .vimrc
 set nocompatible
- 
+
+" force 256 colors on terminal
+set t_Co=256
+
+" load the color scheme before anything
+colorscheme elflord
+
+" Enable syntax highlighting
+syntax on
+
+set cursorline
+
+highlight CursorLine   cterm=NONE ctermbg=235 guibg=NONE
+highlight CursorLineNr cterm=NONE ctermbg=236
+
 " Attempt to determine the type of a file based on its name and possibly its
 " contents. Use this to allow intelligent auto-indenting for each filetype,
 " and for plugins that are filetype specific.
 filetype indent plugin on
- 
-" Enable syntax highlighting
-syntax on
- 
- 
+
+" No backup files
+set nobackup
+
+" no swap file
+set noswapfile
+
+" Command history
+set history=100
+
+" Incremental search (searching as you type)
+set incsearch
+
+" Turn word wrap on/off
+"set no wrap
+set wrap
+
+" Highlight tailing whitespace
+set list listchars=tab:\ \ ,trail:·
+
+set mouse-=a
+
+" User system clipboard
+set clipboard+=unnamed
+
 "------------------------------------------------------------
 " Must have options {{{1
 "
@@ -43,7 +77,7 @@ syntax on
 " try to quit without saving, and swap files will keep you safe if your computer
 " crashes.
 set hidden
- 
+
 " Note that not everyone likes working this way (with the hidden option).
 " Alternatives include using tabs or split windows instead of re-using the same
 " window as mentioned above, and/or either of the following options:
@@ -119,6 +153,9 @@ set cmdheight=2
 " Display line numbers on the left
 set number
  
+" Turn on relative line number (hybrid when also using set number:
+set relativenumber
+
 " Quickly time out on keycodes, but never time out on mappings
 set notimeout ttimeout ttimeoutlen=200
  
