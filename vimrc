@@ -155,10 +155,5 @@ map Y y$
 " Map <C-L> (redraw screen) to also turn off search highlighting until the
 " next search
 nnoremap <C-L> :nohl<CR><C-L>
-
-let mapleader = "-"
-
-nnoremap <leader>ev :edit $MYVIMRC<cr>
-
-nnoremap <leader>sv :source $MYVIMRC<cr>
-
+ 
+"------------------------------------------------------------
