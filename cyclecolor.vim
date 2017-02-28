@@ -57,6 +57,7 @@
 " TODO:  Allow selecting the scheme from a list (like csExplorer.vim).
 "        Notification of same-named schemes in different directories.
 "        Allow blacklisting specific colorscheme files.
+" My comment!
 
 let s:schemes = "\n".globpath(&rtp, "colors/*.vim")."\n"
 let s:currentfile = ""
